@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>
+            Mango Alarm System
+        </h1>
+    </header>
+
+    <main class="hero">
+        <div class="top-controls">
+            <div class="indicator is-not-ok">
+                AC
+            </div>
+
+            <div class="indicator is-ok">
+                Alarm Status
+            </div>
+        </div>
+
+        <div class="main-controls">
+            <div class="controls-row">
+                <div class="indicator-temp is-not-ok">
+                    <div class="label">
+                        Temp 1
+                    </div>
+
+                    <div class="temp-value">
+                        <span data-temp>123</span><span> C&deg</span>
+                    </div>
+                </div>
+
+                <div class="indicator is-ok">
+                    Smoke 1
+                </div>
+
+                <div class="indicator is-not-ok">
+                    Water 1
+                </div>
+            </div>
+
+            <div class="controls-row">
+                <div class="indicator-temp is-ok">
+                    <div class="label">
+                        Temp 1
+                    </div>
+
+                    <div class="temp-value">
+                        <span data-temp="1">2</span>
+                        <span>C&deg</span>
+                    </div>
+                </div>
+
+                <div class="indicator is-ok">
+                    Smoke 1
+                </div>
+
+                <div class="indicator is-ok">
+                    Water 1
+                </div>
+            </div>
+
+            <div class="controls-row">
+                <div class="indicator-temp is-ok">
+                    <div class="label">
+                        Temp 1
+                    </div>
+
+                    <div class="temp-value">
+                        <span data-temp="1">1</span>
+                        <span>C&deg</span>
+                    </div>
+                </div>
+
+                <div class="indicator is-not-ok">
+                    Smoke 1
+                </div>
+
+                <div class="indicator is-ok">
+                    Water 1
+                </div>
+            </div>
+
+            <div class="controls-row">
+                <div class="indicator-temp is-ok">
+                    <div class="label">
+                        Temp 1
+                    </div>
+
+                    <div class="temp-value">
+                        <span data-temp="1">123</span>
+                        <span>C&deg</span>
+                    </div>
+                </div>
+
+                <div class="indicator is-ok">
+                    Smoke 1
+                </div>
+
+                <div class="indicator is-ok">
+                    Water 1
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="system-logs">
+            <p>12:00 Temperature sensor zone 1 alarm</p>
+            <p>11:58 Water leak sensor zone 2 alarm</p>
+            <p>11:57 Smoke sensor zone 4 alarm</p>
+            <p>11:56 Smoke sensor zone 3 alarm</p>
+        </div>
+
+        <div class="switchers-row">
+            <div class="control">
+                <label for="alarm">
+                    <span>Alarm</span>
+
+                    <div class="indicator is-ok">
+                        On
+                    </div>
+                </label>
+
+                <input type="checkbox" id="alarm">
+            </div>
+
+            <div class="control">
+                <label for="alarm">
+                    <span>Pump 1</span>
+                    <div class="indicator is-not-ok">
+                        Off
+                    </div>
+                </label>
+                <input type="checkbox" id="pump1">
+            </div>
+
+            <div class="control">
+                <label for="alarm">
+                    <span>Pump 2</span>
+
+                    <div class="indicator is-ok">
+                        On
+                    </div>
+                </label>
+                <input type="checkbox" id="pump2">
+            </div>
+
+            <div class="control">
+                <label for="alarm">
+                    <span>Pump 2</span>
+
+                    <div class="indicator is-ok">
+                        On
+                    </div>
+                </label>
+
+                <input type="checkbox" id="plc">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
