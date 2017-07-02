@@ -59,6 +59,7 @@ div, p {
 
 .indicator-temp {
     padding: 15px;
+    min-width: 200px;
 }
 
 .indicator::before {
