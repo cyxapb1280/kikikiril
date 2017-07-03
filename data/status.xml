@@ -1,32 +1,28 @@
 <response>
-<ledAlarmStatus>~string~</ledAlarmStatus>
-<ledAC>~string~</ledAC>
-<ledTemp1>~string~</ledTemp1>
-<ledTemp2>~lestringd~</ledTemp2>
-<ledTemp3>~string~</ledTemp3>
-<ledTemp4>~string~</ledTemp4>
-<ledWater1>~string~</ledWater1>
-<ledWater2>~string~</ledWater2>
-<ledWater3>~string~</ledWater3>
-<ledWater4>~string~</ledWater4>
-<ledSmoke1>~string~</ledSmoke1>
-<ledSmoke2>~string~</ledSmoke2>
-<ledSmoke3>~string~</ledSmoke3>
-<ledSmoke4>~string~</ledSmoke4>
-<ledAlarmEnabled>~string~</ledAlarmEnabled>
-<ledPump1>~string~</ledPump1>
-<ledPump2>~string~</ledPump2>
-<ledPLC>~string~</ledPLC>
+    <ledAlarmStatus>on</ledAlarmStatus>
+    <ledAC>off</ledAC>
+    <ledTemp1>off</ledTemp1>
+    <ledTemp2>off</ledTemp2>
+    <ledTemp3>off</ledTemp3>
+    <ledTemp4>off</ledTemp4>
+    <ledWater1>on</ledWater1>
+    <ledWater2>on</ledWater2>
+    <ledWater3>off</ledWater3>
+    <ledWater4>on</ledWater4>
+    <ledSmoke1>off</ledSmoke1>
+    <ledSmoke2>off</ledSmoke2>
+    <ledSmoke3>off</ledSmoke3>
+    <ledSmoke4>off</ledSmoke4>
+    <ledAlarmEnabled>off</ledAlarmEnabled>
+    <ledPump1>off</ledPump1>
+    <ledPump2>off</ledPump2>
+    <ledPLC>off</ledPLC>
 
-<btnAlarm>~string~</btnAlarm>
-<btnPump1>~string~</btnPump1>
-<btnPump2>~string~</btnPump2>
-<btnPLC>~string~</btnPLC>
+    <temp1>67</temp1>
+    <temp2>30</temp2>
+    <temp3>50</temp3>
+    <temp4>10</temp4>
 
-<temp1>~string~</temp1>
-<temp2>~string~</temp2>
-<temp3>~string~</temp3>
-<temp4>~string~</temp4>
-
-<eventLog>~string~</eventLog>
+    <eventLog>~string~</eventLog>
 </response>
+
