@@ -1,170 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="mchp.js" defer></script>
 </head>
 <body>
 <div class="container">
-    <header class="header">
-        <h1>
-            Mango Alarm System
-        </h1>
-    </header>
+	<header class="header">
+		<h1>
+			Mango Alarm System
+		</h1>
+	</header>
 
-    <main class="hero">
-        <div class="top-controls">
-            <div class="indicator is-not-ok">
-                AC
-            </div>
+	<main class="hero">
+		<div class="top-controls">
+			<div class="indicator" data-indicator-name="ledAC">
+				AC
+			</div>
 
-            <div class="indicator is-ok">
-                Alarm Status
-            </div>
-        </div>
+			<div class="indicator" data-indicator-name="ledAlarmStatus">
+				Alarm Status
+			</div>
+		</div>
 
-        <div class="main-controls">
-            <div class="controls-row">
-                <div class="indicator is-ok">
-                    Smoke 1
-                </div>
+		<div class="main-controls">
+			<div class="controls-row">
+				<div class="indicator" data-indicator-name="ledSmoke1">
+					Smoke 1
+				</div>
 
-                <div class="indicator-temp is-not-ok">
-                    <div class="label">
-                        Temp 1
-                    </div>
+				<div class="indicator-temp" data-indicator-name="ledTemp1">
+					<div class="label">
+						Temp 1
+					</div>
 
-                    <div class="temp-value">
-                        <span data-temp>123</span><span> C&deg</span>
-                    </div>
-                </div>
+					<div class="temp-value">
+						<span data-temp-name="temp1">123</span><span> C&deg</span>
+					</div>
+				</div>
 
-                <div class="indicator is-not-ok">
-                    Water 1
-                </div>
-            </div>
+				<div class="indicator" data-indicator-name="ledWater1">
+					Water 1
+				</div>
+			</div>
 
-            <div class="controls-row">
-                <div class="indicator is-ok">
-                    Smoke 1
-                </div>
+			<div class="controls-row">
+				<div class="indicator" data-indicator-name="ledSmoke2">
+					Smoke 2
+				</div>
 
-                <div class="indicator-temp is-ok">
-                    <div class="label">
-                        Temp 1
-                    </div>
+				<div class="indicator-temp" data-indicator-name="ledTemp2">
+					<div class="label">
+						Temp 2
+					</div>
 
-                    <div class="temp-value">
-                        <span data-temp="1">2</span>
-                        <span>C&deg</span>
-                    </div>
-                </div>
+					<div class="temp-value">
+						<span data-temp-name="temp2">2</span>
+						<span>C&deg</span>
+					</div>
+				</div>
 
-                <div class="indicator is-ok">
-                    Water 1
-                </div>
-            </div>
+				<div class="indicator" data-indicator-name="ledWater2">
+					Water 2
+				</div>
+			</div>
 
-            <div class="controls-row">
-                <div class="indicator is-not-ok">
-                    Smoke 1
-                </div>
+			<div class="controls-row">
+				<div class="indicator" data-indicator-name="ledSmoke3">
+					Smoke 3
+				</div>
 
-                <div class="indicator-temp is-ok">
-                    <div class="label">
-                        Temp 1
-                    </div>
+				<div class="indicator-temp" data-indicator-name="ledTemp3">
+					<div class="label">
+						Temp 3
+					</div>
 
-                    <div class="temp-value">
-                        <span data-temp="1">1</span>
-                        <span>C&deg</span>
-                    </div>
-                </div>
+					<div class="temp-value">
+						<span data-temp-name="temp3">1</span>
+						<span>C&deg</span>
+					</div>
+				</div>
 
-                <div class="indicator is-ok">
-                    Water 1
-                </div>
-            </div>
+				<div class="indicator" data-indicator-name="ledWater3">
+					Water 3
+				</div>
+			</div>
 
-            <div class="controls-row">
-                <div class="indicator is-ok">
-                    Smoke 1
-                </div>
+			<div class="controls-row">
+				<div class="indicator" data-indicator-name="ledSmoke4">
+					Smoke 4
+				</div>
 
-                <div class="indicator-temp is-ok">
-                    <div class="label">
-                        Temp 1
-                    </div>
+				<div class="indicator-temp" data-indicator-name="ledTemp4">
+					<div class="label">
+						Temp 4
+					</div>
 
-                    <div class="temp-value">
-                        <span data-temp="1">123</span>
-                        <span>C&deg</span>
-                    </div>
-                </div>
+					<div class="temp-value">
+						<span data-temp-name="temp4">123</span>
+						<span>C&deg</span>
+					</div>
+				</div>
 
-                <div class="indicator is-ok">
-                    Water 1
-                </div>
-            </div>
-        </div>
-    </main>
+				<div class="indicator" data-indicator-name="ledWater4">
+					Water 4
+				</div>
+			</div>
+		</div>
+	</main>
 
-    <footer class="footer">
-        <div class="system-logs">
-            <p>12:00 Temperature sensor zone 1 alarm</p>
-            <p>11:58 Water leak sensor zone 2 alarm</p>
-            <p>11:57 Smoke sensor zone 4 alarm</p>
-            <p>11:56 Smoke sensor zone 3 alarm</p>
-        </div>
+	<footer class="footer">
+		<div class="system-logs" data-system-logs>
+		</div>
 
-        <div class="switchers-row">
-            <div class="control">
-                <label for="alarm">
-                    <span>Alarm</span>
+		<div class="switchers-row">
+			<div class="control">
+				<label for="alarmEnabled">Alarm</label>
 
-                    <div class="indicator is-ok">
-                        On
-                    </div>
-                </label>
+				<button class="indicator" id="alarmEnabled" data-indicator-name="ledAlarmEnabled">
+					On
+				</button>
+			</div>
 
-                <input type="checkbox" id="alarm">
-            </div>
+			<div class="control">
+				<label for="pump1">Pump 1</label>
 
-            <div class="control">
-                <label for="alarm">
-                    <span>Pump 1</span>
-                    <div class="indicator is-not-ok">
-                        Off
-                    </div>
-                </label>
-                <input type="checkbox" id="pump1">
-            </div>
+				<button class="indicator" id="pump1" type="button" data-indicator-name="ledPump1">
+					Off
+				</button>
+			</div>
 
-            <div class="control">
-                <label for="alarm">
-                    <span>Pump 2</span>
+			<div class="control">
+				<label for="pump2">Pump 2</label>
 
-                    <div class="indicator is-ok">
-                        On
-                    </div>
-                </label>
-                <input type="checkbox" id="pump2">
-            </div>
+				<button class="indicator" id="pump2" data-indicator-name="ledPump2">
+					On
+				</button>
+			</div>
 
-            <div class="control">
-                <label for="alarm">
-                    <span>Pump 2</span>
+			<div class="control">
+				<label for="plc">PLC</label>
 
-                    <div class="indicator is-ok">
-                        On
-                    </div>
-                </label>
-
-                <input type="checkbox" id="plc">
-            </div>
-        </div>
-    </footer>
+				<button class="indicator" type="button" id="plc" data-indicator-name="ledPLC">
+					On
+				</button>
+			</div>
+		</div>
+	</footer>
 </div>
 </body>
 </html>
