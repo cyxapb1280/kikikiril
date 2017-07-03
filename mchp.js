@@ -21,7 +21,10 @@ const LED_NAMES = [
 	'ledSmoke1',
 	'ledSmoke2',
 	'ledSmoke3',
-	'ledSmoke4',
+	'ledSmoke4'
+];
+
+const BUTTONS_NAMES = [
 	'ledAlarmEnabled',
 	'ledPump1',
 	'ledPump2',
@@ -159,6 +162,14 @@ function updateView(xmlData) {
 		const element = document.querySelector(`[data-temp-name=${name}]`);
 
 		element.innerHTML = getXMLValue(xmlData, name);
+	});
+
+	BUTTONS_NAMES.forEach(name => {
+		const element = document.querySelector(`[data-button-name=${name}]`);
+		const value = getXMLValue(xmlData, name);
+
+		element.innerHTML = value;
+		element.classList.add(value === 'on' ? 'is-ok' : 'is-not-ok');
 	});
 
 	const logsElement = document.querySelector('[data-system-logs]');

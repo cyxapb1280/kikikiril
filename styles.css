@@ -161,6 +161,11 @@ div, p {
 
 .control button {
 	border: none;
+	text-transform: capitalize;
+}
+
+.control button:hover {
+	box-shadow: 5px 5px 15px -5px black;
 }
 
 .control button:active {
