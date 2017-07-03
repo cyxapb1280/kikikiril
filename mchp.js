@@ -154,9 +154,9 @@ function updateView(xmlData) {
 		const element = document.querySelector(`[data-indicator-name=${name}]`);
 		const value = getXMLValue(xmlData, name);
 
+		element.classList.remove('is-ok', 'is-not-ok');
 		element.classList.add(value === 'on' ? 'is-ok' : 'is-not-ok');
 	});
-
 
 	TEMP_NAMES.forEach(name => {
 		const element = document.querySelector(`[data-temp-name=${name}]`);
@@ -169,6 +169,7 @@ function updateView(xmlData) {
 		const value = getXMLValue(xmlData, name);
 
 		element.innerHTML = value;
+		element.classList.remove('is-ok', 'is-not-ok');
 		element.classList.add(value === 'on' ? 'is-ok' : 'is-not-ok');
 	});
 
